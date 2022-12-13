@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import roman.RomanToInt;
+import problems.RomanToInt;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,7 +13,7 @@ public class RomanTest {
     int third = romanString.romanToInt("MCMXCIV");
 
     @Test
-    @DisplayName("Expected output of method should be correct")
+    @DisplayName("Three test cases for romanToInt method")
     void correctOutputTest() {
         assertEquals(3, first);
         assertEquals(58, second);

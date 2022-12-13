@@ -1,4 +1,4 @@
-package roman;
+package problems;
 
 public class RomanToInt {
     public int romanToInt(String s) {
