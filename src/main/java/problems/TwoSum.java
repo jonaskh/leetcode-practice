@@ -5,22 +5,19 @@ import java.util.Arrays;
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] result = {0,0};
-        boolean found = false;
-
-        if (nums.length < 2) {
-            return null;
-            }
 
         int i = 0;
         int k = 0;
 
-        while (i < nums.length - 1 && !found) {
-            while (k < nums.length - 1 && !found) {
+        //while loop that runs through first index and then checks all other index, if no match
+        //do same with second index and so on.
+        while (i < nums.length - 1) {
+            while (k < nums.length - 1) {
                 if (nums[i] + nums[nums.length - 1 - k] == target) {
                     result[0] = i;
                     result[1] = nums.length - k - 1;
 
-                    found = true;
+                    return result;
                 } else {
                     k++;
                 }

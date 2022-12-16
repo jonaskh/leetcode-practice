@@ -16,10 +16,13 @@ public class Solutions {
         int[] secondResult = twoSums.twoSum(second,6);
         int[] thirdResult = twoSums.twoSum(third,6);
 
+        int x = 4224;
+        char[] array = Integer.toString(x).toCharArray();
+
         System.out.println(Arrays.toString(firstResult));
         System.out.println(Arrays.toString(secondResult));
         System.out.println(Arrays.toString(thirdResult));
 
-//        System.out.println(romanToInt.romanToInt("XV"));
+        System.out.println(romanToInt.romanToInt("XV"));
     }
 }
